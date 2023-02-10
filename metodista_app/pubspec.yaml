@@ -101,3 +101,7 @@ flutter:
   assets:
     - assets/images/logo-square.png
     - assets/images/logo-horizontal.png
+    - assets/images/cultos.png
+    - assets/images/bebe-apontando.png
+    - assets/images/juventude.jpeg
+    - assets/images/kids.png
