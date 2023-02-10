@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:metodista_app/components/schedules_list.dart';
 
 void main() => runApp(MetodistaApp());
 
@@ -102,28 +103,15 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
-              margin: EdgeInsets.all(15),
+              margin: EdgeInsets.all(30),
+              alignment: Alignment.center,
               child: Text(
                 'Uma Família para pertencer.',
                 style: Theme.of(context).textTheme.headline6,
                 textAlign: TextAlign.center,
               ),
             ),
-            Card(
-              child: Row(
-                children: [
-                  Container(
-                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Theme.of(context).colorScheme.secondary,
-                      ),
-                    ),
-                    padding: EdgeInsets.all(60),
-                  )
-                ],
-              ),
-            )
+            SchedulesList(),
           ],
         ),
       ),
