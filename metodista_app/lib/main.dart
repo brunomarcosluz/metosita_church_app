@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:metodista_app/components/schedules_list.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() => runApp(MetodistaApp());
 
@@ -64,9 +65,12 @@ class HomePage extends StatelessWidget {
           alignment: Alignment.bottomCenter,
           height: 60,
           width: 270,
-          child: Image.asset(
-            'assets/images/logo-horizontal.png',
-            fit: BoxFit.cover,
+          child: GestureDetector(
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder:(context) => HomePage(),)),
+            child: Image.asset(
+              'assets/images/logo-horizontal.png',
+              fit: BoxFit.cover,
+            ),
           ),
         ),
         actions: [
@@ -100,6 +104,7 @@ class HomePage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
