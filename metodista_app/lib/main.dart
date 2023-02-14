@@ -64,9 +64,12 @@ class HomePage extends StatelessWidget {
           alignment: Alignment.bottomCenter,
           height: 60,
           width: 270,
-          child: Image.asset(
-            'assets/images/logo-horizontal.png',
-            fit: BoxFit.cover,
+          child: GestureDetector(
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder:(context) => HomePage(),)),
+            child: Image.asset(
+              'assets/images/logo-horizontal.png',
+              fit: BoxFit.cover,
+            ),
           ),
         ),
         actions: [
