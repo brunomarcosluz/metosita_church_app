@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:metodista_app/components/schedules_list.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() => runApp(MetodistaApp());
 
@@ -103,6 +104,7 @@ class HomePage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
