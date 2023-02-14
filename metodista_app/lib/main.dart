@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:metodista_app/components/schedules_list.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:metodista_app/components/drawer_list.dart';
 
 void main() => runApp(MetodistaApp());
 
@@ -84,24 +85,7 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: const <Widget>[
-            DrawerHeader(
-              decoration: BoxDecoration(color: Colors.white),
-              child: Text(
-                'Drawer Header',
-                style: TextStyle(
-                  color: Color.fromARGB(255, 245, 2, 2),
-                  fontSize: 24,
-                ),
-              ),
-            ),
-          ],
-        ),
-        backgroundColor: Colors.white,
-      ),
+      drawer: DrawerList(),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
