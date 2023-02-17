@@ -15,8 +15,6 @@ class DrawerList extends StatelessWidget {
             height: 60,
             width: 120,
             margin: EdgeInsets.all(50),
-            //margin: EdgeInsets.fromLTRB(40, 0, 40, 40),
-            //padding: EdgeInsets.fromLTRB(40, 0, 40, 40),
             alignment: Alignment.center,
             child: Image.asset(
               'assets/images/logo-horizontal.png',

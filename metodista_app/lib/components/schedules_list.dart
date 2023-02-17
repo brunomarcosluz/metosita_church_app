@@ -5,6 +5,7 @@ final Uri _urlMaps = Uri.parse('https://goo.gl/maps/amwPCPCKP7KUAUJVA');
 final Uri _urlCultos = Uri.parse('https://www.youtube.com/@IMCamposEliseos/streams');
 final Uri _urlPower = Uri.parse('https://www.instagram.com/power.jvs');
 final Uri _urlKids = Uri.parse('https://www.instagram.com/igrejadacrianca.metodista/');
+
 class SchedulesList extends StatelessWidget {
   const SchedulesList({super.key});
 
