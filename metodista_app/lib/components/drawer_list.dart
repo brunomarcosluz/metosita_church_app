@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:metodista_app/components/about_us.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:metodista_app/main.dart';
+import 'package:metodista_app/components/contribute.dart';
+//import 'package:metodista_app/components/about_us.dart';
 
 class DrawerList extends StatelessWidget {
   const DrawerList({super.key});
@@ -15,8 +18,6 @@ class DrawerList extends StatelessWidget {
             height: 60,
             width: 120,
             margin: EdgeInsets.all(50),
-            //margin: EdgeInsets.fromLTRB(40, 0, 40, 40),
-            //padding: EdgeInsets.fromLTRB(40, 0, 40, 40),
             alignment: Alignment.center,
             child: Image.asset(
               'assets/images/logo-horizontal.png',
@@ -24,6 +25,9 @@ class DrawerList extends StatelessWidget {
             ),
           ),
           ListTile(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder:(context) => AboutUs(),));
+            },
             leading: Icon(
               Icons.info,
               color: Color.fromARGB(255, 245, 2, 2),
@@ -69,6 +73,9 @@ class DrawerList extends StatelessWidget {
             ),
           ),
           ListTile(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder:(context) => Contribute(),));
+            },
             leading: Icon(
               Icons.favorite,
               color: Color.fromARGB(255, 245, 2, 2),

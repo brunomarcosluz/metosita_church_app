@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:metodista_app/components/schedules_list.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:metodista_app/components/drawer_list.dart';
+import 'package:metodista_app/components/contribute.dart';
 
 void main() => runApp(MetodistaApp());
 
@@ -80,7 +81,9 @@ class HomePage extends StatelessWidget {
               Icons.favorite_border_outlined,
               color: Color.fromARGB(255, 245, 2, 2),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder:(context) => Contribute(),));
+            },
             iconSize: 32,
           ),
         ],
