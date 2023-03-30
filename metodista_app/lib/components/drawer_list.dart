@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:metodista_app/components/about_us.dart';
+import 'package:metodista_app/components/ministries.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:metodista_app/main.dart';
 import 'package:metodista_app/components/contribute.dart';
+import 'package:metodista_app/components/ministries.dart';
 //import 'package:metodista_app/components/about_us.dart';
 
 class DrawerList extends StatelessWidget {
@@ -43,12 +45,15 @@ class DrawerList extends StatelessWidget {
             ),
           ),
           ListTile(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder:(context) => Ministries(),));
+            },
             leading: Icon(
               Icons.people,
               color: Color.fromARGB(255, 245, 2, 2),
             ),
             title: Text(
-              'Voluntários',
+              'Ministérios',
               style: TextStyle(
                 fontFamily: 'Roboto',
                 fontSize: 14,
