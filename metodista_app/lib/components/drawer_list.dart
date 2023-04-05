@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:metodista_app/components/about_us.dart';
+import 'package:metodista_app/components/members.dart';
 import 'package:metodista_app/components/ministries.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:metodista_app/main.dart';
@@ -63,6 +64,9 @@ class DrawerList extends StatelessWidget {
             ),
           ),
           ListTile(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder:(context) => Members(),));
+            },
             leading: Icon(
               Icons.groups,
               color: Color.fromARGB(255, 245, 2, 2),
