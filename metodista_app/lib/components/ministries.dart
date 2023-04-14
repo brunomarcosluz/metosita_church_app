@@ -51,11 +51,12 @@ class Ministries extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 8),
             Container(
               margin: EdgeInsets.fromLTRB(0, 15, 0, 15),
               padding: EdgeInsets.all(10),
               width: 340,
-              height: 100,
+              height: 110,
               decoration: BoxDecoration(
                 color: Color.fromARGB(217, 245, 5, 5),
                 borderRadius: BorderRadius.circular(5),
@@ -72,8 +73,9 @@ class Ministries extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
+                  SizedBox(height: 8),
                   Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget laoreet enim. Aliquam interdum enim varius porttitor egestas.',
+                    'Somos responsáveis por transmitir informações relevantes para os membros e para a comunidade em geral, utilizando diversas ferramentas e estratégias para comunicar a mensagem da igreja de forma eficaz e coerente.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Roboto',
@@ -89,7 +91,7 @@ class Ministries extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(0, 15, 0, 15),
               padding: EdgeInsets.all(10),
               width: 340,
-              height: 100,
+              height: 110,
               decoration: BoxDecoration(
                 color: Color.fromARGB(217, 245, 5, 5),
                 borderRadius: BorderRadius.circular(5),
@@ -106,8 +108,9 @@ class Ministries extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
+                  SizedBox(height: 8),
                   Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget laoreet enim. Aliquam interdum enim varius porttitor egestas.',
+                    'O ministério de Louvor em uma igreja é responsável por liderar a congregação em adoração e louvor a Deus através da música e canções.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Roboto',
@@ -123,7 +126,7 @@ class Ministries extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(0, 15, 0, 15),
               padding: EdgeInsets.all(10),
               width: 340,
-              height: 100,
+              height: 110,
               decoration: BoxDecoration(
                 color: Color.fromARGB(217, 245, 5, 5),
                 borderRadius: BorderRadius.circular(5),
@@ -140,8 +143,9 @@ class Ministries extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
+                  SizedBox(height: 8),
                   Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget laoreet enim. Aliquam interdum enim varius porttitor egestas.',
+                    'Somos responsáveis por criar e exibir conteúdo visual e sonoro durante os cultos e eventos, utilizando tecnologia e criatividade para transmitir a mensagem de forma clara e impactante.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Roboto',
@@ -157,7 +161,7 @@ class Ministries extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(0, 15, 0, 15),
               padding: EdgeInsets.all(10),
               width: 340,
-              height: 100,
+              height: 110,
               decoration: BoxDecoration(
                 color: Color.fromARGB(217, 245, 5, 5),
                 borderRadius: BorderRadius.circular(5),
@@ -174,8 +178,9 @@ class Ministries extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
+                  SizedBox(height: 8),
                   Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget laoreet enim. Aliquam interdum enim varius porttitor egestas.',
+                    'O ministério KIDS em uma igreja é responsável por ensinar as crianças sobre a Bíblia, de forma lúdica e dinâmica, contribuindo para o seu desenvolvimento espiritual e emocional desde a infância.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Roboto',
@@ -191,7 +196,7 @@ class Ministries extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(0, 15, 0, 15),
               padding: EdgeInsets.all(10),
               width: 340,
-              height: 100,
+              height: 110,
               decoration: BoxDecoration(
                 color: Color.fromARGB(217, 245, 5, 5),
                 borderRadius: BorderRadius.circular(5),
@@ -208,8 +213,9 @@ class Ministries extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
+                  SizedBox(height: 8),
                   Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget laoreet enim. Aliquam interdum enim varius porttitor egestas.',
+                    'Somos responsáveis por orar fervorosamente pelos membros, líderes e necessidades da igreja, buscando a intervenção divina para suprir as demandas e desafios que surgem no decorrer da caminhada cristã.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Roboto',
@@ -225,7 +231,7 @@ class Ministries extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(0, 15, 0, 15),
               padding: EdgeInsets.all(10),
               width: 340,
-              height: 100,
+              height: 110,
               decoration: BoxDecoration(
                 color: Color.fromARGB(217, 245, 5, 5),
                 borderRadius: BorderRadius.circular(5),
@@ -242,8 +248,9 @@ class Ministries extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
+                  SizedBox(height: 8),
                   Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget laoreet enim. Aliquam interdum enim varius porttitor egestas.',
+                    'Somos respsonáveis por gerenciar e coordenar os recursos financeiros, materiais e humanos da igreja, buscando uma gestão eficiente e transparente para cumprir com as necessidades e objetivos da comunidade cristã.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Roboto',
@@ -259,7 +266,7 @@ class Ministries extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(0, 15, 0, 15),
               padding: EdgeInsets.all(10),
               width: 340,
-              height: 100,
+              height: 110,
               decoration: BoxDecoration(
                 color: Color.fromARGB(217, 245, 5, 5),
                 borderRadius: BorderRadius.circular(5),
@@ -276,8 +283,9 @@ class Ministries extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
+                  SizedBox(height: 8),
                   Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget laoreet enim. Aliquam interdum enim varius porttitor egestas.',
+                    'Somos responsáveis por cuidar das necessidades sociais e emocionais da comunidade, promovendo ações de amor e solidariedade para auxiliar os mais necessitados e contribuindo para o bem-estar da igreja como um todo.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Roboto',
