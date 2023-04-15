@@ -99,6 +99,24 @@ class DrawerList extends StatelessWidget {
               ),
             ),
           ),
+          ListTile(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder:(context) => Contribute(),));
+            },
+            leading: Icon(
+              Icons.favorite,
+              color: Color.fromARGB(255, 245, 2, 2),
+            ),
+            title: Text(
+              'Contribua',
+              style: TextStyle(
+                fontFamily: 'Roboto',
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
         ],
       ),
       backgroundColor: Colors.white,

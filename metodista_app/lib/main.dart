@@ -1,7 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:metodista_app/components/schedules_list.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:metodista_app/components/drawer_list.dart';
 import 'package:metodista_app/components/contribute.dart';
 
