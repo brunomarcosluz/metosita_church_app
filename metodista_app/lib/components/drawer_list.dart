@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:metodista_app/components/about_us.dart';
+import 'package:metodista_app/components/cells.dart';
 import 'package:metodista_app/components/members.dart';
 import 'package:metodista_app/components/ministries.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:metodista_app/main.dart';
 import 'package:metodista_app/components/contribute.dart';
-import 'package:metodista_app/components/ministries.dart';
 //import 'package:metodista_app/components/about_us.dart';
 
 class DrawerList extends StatelessWidget {
@@ -83,14 +81,14 @@ class DrawerList extends StatelessWidget {
           ),
           ListTile(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder:(context) => Contribute(),));
+              Navigator.push(context, MaterialPageRoute(builder:(context) => Cells(),));
             },
             leading: Icon(
-              Icons.favorite,
+              Icons.group_add,
               color: Color.fromARGB(255, 245, 2, 2),
             ),
             title: Text(
-              'Contribua',
+              'Células',
               style: TextStyle(
                 fontFamily: 'Roboto',
                 fontSize: 14,
