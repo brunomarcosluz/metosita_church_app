@@ -23,6 +23,24 @@ class Cells extends StatelessWidget {
         toolbarHeight: 85,
         elevation: 0,
       ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                      height: 148,
+                      child: Image.asset(
+                    'assets/images/banner-igreja.png',
+                    fit: BoxFit.cover,
+                  )),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
