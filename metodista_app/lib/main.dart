@@ -88,22 +88,24 @@ class HomePage extends StatelessWidget {
         ],
       ),
       drawer: DrawerList(),
-      body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Container(
-              margin: EdgeInsets.all(30),
-              alignment: Alignment.center,
-              child: Text(
-                'Uma Família para pertencer.',
-                style: Theme.of(context).textTheme.headline6,
-                textAlign: TextAlign.center,
+      body: Center(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                margin: EdgeInsets.all(30),
+                alignment: Alignment.center,
+                child: Text(
+                  'Uma Família para pertencer.',
+                  style: Theme.of(context).textTheme.headline6,
+                  textAlign: TextAlign.center,
+                ),
               ),
-            ),
-            SchedulesList(),
-          ],
+              SchedulesList(),
+            ],
+          ),
         ),
       ),
       backgroundColor: Colors.white,

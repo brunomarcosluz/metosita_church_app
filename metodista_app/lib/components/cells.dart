@@ -38,6 +38,33 @@ class Cells extends StatelessWidget {
                 ),
               ],
             ),
+            Container(
+              margin: EdgeInsets.fromLTRB(0, 20, 0, 15),
+              child: Text(
+                'Provérbios 27:17 NAA',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontFamily: 'Roboto',
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(230, 245, 5, 5),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
+              width: 300,
+              child: Text(
+                '“O ferro se afia com ferro, e uma pessoa, pela presença do seu próximo.”',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontFamily: 'Roboto',
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
+                  color: Colors.black,
+                ),
+              ),
+            ),
           ],
         ),
       ),
