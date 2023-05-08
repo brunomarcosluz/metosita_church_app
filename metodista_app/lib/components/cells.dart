@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+final Uri _urlCells = Uri.parse('https://www.google.com/maps/d/embed?mid=1B3rih6dfIGOgi8rtiKp8Xp9uIUWZVJo&ehbc=2E312F');
 
 class Cells extends StatelessWidget {
   const Cells({super.key});
@@ -65,9 +68,37 @@ class Cells extends StatelessWidget {
                 ),
               ),
             ),
+            GestureDetector(
+              onTap: () => {_LaunchCells()},
+              child: Container(
+                margin: EdgeInsets.fromLTRB(0, 40, 0, 15),
+                padding: EdgeInsets.all(20),
+                width: 220,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(230, 245, 5, 5),
+                  borderRadius: BorderRadius.circular(5),
+                ),
+                child: Text(
+                  'Quero Participar',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontFamily: 'Roboto',
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
     );
+  }
+}
+
+Future<void> _LaunchCells() async {
+  if (!await launchUrl(_urlCells)) {
+    throw Exception('Não é possível abrir $_urlCells');
   }
 }
