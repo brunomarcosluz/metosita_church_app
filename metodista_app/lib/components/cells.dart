@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-final Uri _urlMember = Uri.parse('https://www.youtube.com/watch?v=6VcQDoL7DTM&ab_channel=DanielAlencar%2FAbaPai');
-class Members extends StatelessWidget {
+final Uri _urlCells = Uri.parse('https://www.google.com/maps/d/embed?mid=1B3rih6dfIGOgi8rtiKp8Xp9uIUWZVJo&ehbc=2E312F');
+
+class Cells extends StatelessWidget {
+  const Cells({super.key});
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Text(
-          'Seja Membro',
+          'Células',
           style: TextStyle(
             fontFamily: 'Roboto',
             fontSize: 20,
@@ -43,11 +44,11 @@ class Members extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(0, 20, 0, 15),
               child: Text(
-                'Seja Membro!',
+                'Provérbios 27:17 NAA',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Roboto',
-                  fontSize: 22,
+                  fontSize: 16,
                   fontWeight: FontWeight.bold,
                   color: Color.fromARGB(230, 245, 5, 5),
                 ),
@@ -57,7 +58,7 @@ class Members extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
               width: 300,
               child: Text(
-                'Se você tem interesse em se tornar membro da nossa comunidade toque no botão abaixo! \n Você será redirecionado ao nosso formulário de interesse.',
+                '“O ferro se afia com ferro, e uma pessoa, pela presença do seu próximo.”',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Roboto',
@@ -68,17 +69,17 @@ class Members extends StatelessWidget {
               ),
             ),
             GestureDetector(
-              onTap: () => {_LaunchMemberURL()},
+              onTap: () => {_LaunchCells()},
               child: Container(
                 margin: EdgeInsets.fromLTRB(0, 40, 0, 15),
                 padding: EdgeInsets.all(20),
-                width: 200,
+                width: 220,
                 decoration: BoxDecoration(
                   color: Color.fromARGB(230, 245, 5, 5),
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Text(
-                  'Saiba Mais',
+                  'Quero Participar',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: 'Roboto',
@@ -89,20 +90,6 @@ class Members extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              margin: EdgeInsets.fromLTRB(0, 50, 0, 15),
-              child: Text(
-                'Uma Família para pertencer.',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontFamily: 'Roboto',
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
-                  fontStyle: FontStyle.italic,
-                  color: Colors.black,
-                ),
-              ),
-            ),
           ],
         ),
       ),
@@ -110,8 +97,8 @@ class Members extends StatelessWidget {
   }
 }
 
-Future<void> _LaunchMemberURL() async {
-  if (!await launchUrl(_urlMember)) {
-    throw Exception('Não é possível abrir $_urlMember');
+Future<void> _LaunchCells() async {
+  if (!await launchUrl(_urlCells)) {
+    throw Exception('Não é possível abrir $_urlCells');
   }
 }
