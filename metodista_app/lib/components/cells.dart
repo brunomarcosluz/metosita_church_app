@@ -78,7 +78,6 @@ class Cells extends StatelessWidget {
               child: Placeholder(),
             ),
              */
-            
             GestureDetector(
               onTap: () => {_LaunchCells()},
               child: Container(
