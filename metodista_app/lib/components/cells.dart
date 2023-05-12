@@ -67,23 +67,33 @@ class Cells extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
+            ),/*
+            Container(
+              margin: EdgeInsets.all(20),
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Color.fromARGB(230, 245, 5, 5),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Placeholder(),
             ),
+             */
             GestureDetector(
               onTap: () => {_LaunchCells()},
               child: Container(
                 margin: EdgeInsets.fromLTRB(0, 40, 0, 15),
                 padding: EdgeInsets.all(20),
-                width: 220,
+                width: 200,
                 decoration: BoxDecoration(
                   color: Color.fromARGB(230, 245, 5, 5),
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Text(
-                  'Quero Participar',
+                  'Mapa de Células',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: 'Roboto',
-                    fontSize: 24,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
