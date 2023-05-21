@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:metodista_app/components/cells-list.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-final Uri _urlCells = Uri.parse('https://www.google.com/maps/d/embed?mid=1B3rih6dfIGOgi8rtiKp8Xp9uIUWZVJo&ehbc=2E312F');
+final Uri _urlCells = Uri.parse(
+    'https://www.google.com/maps/d/embed?mid=1B3rih6dfIGOgi8rtiKp8Xp9uIUWZVJo&ehbc=2E312F');
 
 class Cells extends StatelessWidget {
   const Cells({super.key});
@@ -35,9 +37,9 @@ class Cells extends StatelessWidget {
                   child: Container(
                       height: 148,
                       child: Image.asset(
-                    'assets/images/banner-igreja.png',
-                    fit: BoxFit.cover,
-                  )),
+                        'assets/images/banner-igreja.png',
+                        fit: BoxFit.cover,
+                      )),
                 ),
               ],
             ),
@@ -55,6 +57,7 @@ class Cells extends StatelessWidget {
               ),
             ),
             Container(
+              // Provérbios
               margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
               width: 300,
               child: Text(
@@ -67,17 +70,36 @@ class Cells extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
-            ),/*
-            Container(
-              margin: EdgeInsets.all(20),
-              padding: EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                color: Color.fromARGB(230, 245, 5, 5),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Placeholder(),
             ),
-             */
+            Container(
+              // Conheça nossas células
+              margin: EdgeInsets.fromLTRB(0, 8, 0, 8),
+              child: Text(
+                'Conheça as nossas células',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontFamily: 'Roboto',
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(230, 245, 5, 5),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(0, 15, 0, 15),
+              padding: EdgeInsets.all(20),
+              width: 280,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Color.fromARGB(230, 245, 5, 5),
+                  width: 1
+                ),
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: CellsList(
+
+              ),
+            ),
             GestureDetector(
               onTap: () => {_LaunchCells()},
               child: Container(
