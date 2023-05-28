@@ -96,9 +96,7 @@ class Cells extends StatelessWidget {
                 ),
                 borderRadius: BorderRadius.circular(5),
               ),
-              child: CellsList(
-
-              ),
+              child: CellsList(),
             ),
             GestureDetector(
               onTap: () => {_LaunchCells()},
