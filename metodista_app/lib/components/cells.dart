@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:metodista_app/components/cells-list.dart';
+import 'package:metodista_app/components/online-cells-list.dart';
+import 'package:metodista_app/components/presencial-cells-list.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 final Uri _urlCells = Uri.parse(
@@ -13,7 +14,7 @@ class Cells extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Text(
+        title: const Text(
           'Células',
           style: TextStyle(
             fontFamily: 'Roboto',
@@ -22,7 +23,7 @@ class Cells extends StatelessWidget {
             color: Colors.black,
           ),
         ),
-        leading: BackButton(
+        leading: const BackButton(
           color: Color.fromARGB(230, 245, 5, 5),
         ),
         toolbarHeight: 85,
@@ -34,7 +35,7 @@ class Cells extends StatelessWidget {
             Row(
               children: [
                 Expanded(
-                  child: Container(
+                  child: SizedBox(
                       height: 148,
                       child: Image.asset(
                         'assets/images/banner-igreja.png',
@@ -45,7 +46,7 @@ class Cells extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.fromLTRB(0, 20, 0, 15),
-              child: Text(
+              child: const Text(
                 'Provérbios 27:17 NAA',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -60,7 +61,7 @@ class Cells extends StatelessWidget {
               // Provérbios
               margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
               width: 300,
-              child: Text(
+              child: const Text(
                 '“O ferro se afia com ferro, e uma pessoa, pela presença do seu próximo.”',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -74,7 +75,7 @@ class Cells extends StatelessWidget {
             Container(
               // Conheça nossas células
               margin: EdgeInsets.fromLTRB(0, 8, 0, 8),
-              child: Text(
+              child: const Text(
                 'Conheça as nossas células',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -88,7 +89,7 @@ class Cells extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(0, 15, 0, 15),
               padding: EdgeInsets.all(20),
-              width: 280,
+              width: 260,
               decoration: BoxDecoration(
                 border: Border.all(
                   color: Color.fromARGB(230, 245, 5, 5),
@@ -96,7 +97,20 @@ class Cells extends StatelessWidget {
                 ),
                 borderRadius: BorderRadius.circular(5),
               ),
-              child: CellsList(),
+              child: OnlineCellsList(),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(0, 15, 0, 15),
+              padding: EdgeInsets.all(20),
+              width: 260,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Color.fromARGB(230, 245, 5, 5),
+                  width: 1
+                ),
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: PresencialCellsList(),
             ),
             GestureDetector(
               onTap: () => {_LaunchCells()},
@@ -108,7 +122,7 @@ class Cells extends StatelessWidget {
                   color: Color.fromARGB(230, 245, 5, 5),
                   borderRadius: BorderRadius.circular(5),
                 ),
-                child: Text(
+                child: const Text(
                   'Mapa de Células',
                   textAlign: TextAlign.center,
                   style: TextStyle(
