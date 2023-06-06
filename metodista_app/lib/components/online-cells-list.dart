@@ -8,6 +8,8 @@ class OnlineCellsList extends StatefulWidget {
 }
 
 class _OnlineCellsListState extends State<OnlineCellsList> {
+  bool _openOnlineCells = false;
+
   @override
   Widget build(BuildContext context) {
     return Row(mainAxisAlignment: MainAxisAlignment.center, 
