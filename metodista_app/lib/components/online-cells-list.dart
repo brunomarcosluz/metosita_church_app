@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-class OnlineCellsList extends StatefulWidget {
-  const OnlineCellsList({super.key});
+class OnlineCellsClosedList extends StatefulWidget {
+  const OnlineCellsClosedList({super.key});
 
   @override
-  State<OnlineCellsList> createState() => _OnlineCellsListState();
+  State<OnlineCellsClosedList> createState() => _OnlineCellListClosedState();
 }
 
-class _OnlineCellsListState extends State<OnlineCellsList> {
+class _OnlineCellListClosedState extends State<OnlineCellsClosedList> {
+  bool _openOnlineCells = false;
+
   @override
   Widget build(BuildContext context) {
     return Row(mainAxisAlignment: MainAxisAlignment.center, 
